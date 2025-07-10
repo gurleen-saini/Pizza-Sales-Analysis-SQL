@@ -67,4 +67,4 @@ The project followed a structured data analysis process:
 ## 🎓 Project Presentation
 
 📽️ View the complete **Pizza Sales Presentation** (designed in Canva):  
-🔗 [Click here to view the Canva presentation]([https://www.canva.com/design/DAGsr7iGDFk/sAyBlEZasS83fnyag3CrjA/view](https://www.canva.com/design/DAGsr7iGDFk/C1NwLtf_OXqrA68Kcl640Q/view?utm_content=DAGsr7iGDFk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16a4153e5e))
+🔗 [Click here to view the Canva presentation](https://www.canva.com/design/DAGsr7iGDFk/C1NwLtf_OXqrA68Kcl640Q/view?utm_content=DAGsr7iGDFk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16a4153e5e)
