@@ -1,70 +1,74 @@
 # 🍕 Pizza Sales Analysis – SQL Project
 
-A comprehensive SQL-based analysis of a pizza restaurant’s sales data to uncover insights on revenue trends, best/worst sellers, peak sales periods, and customer ordering behavior.
+A detailed SQL-driven data exploration project analyzing sales patterns, revenue contributors, popular pizza categories, and order behavior to support business strategy for a fictional pizza chain.
 
 ## 📌 Project Overview
 
-This project explores a fictional pizza restaurant's sales data using **SQL** to answer key business questions such as:
+This project analyzes a pizza restaurant’s performance by examining key business questions such as:
 
-- Which pizzas generate the most revenue?
-- What are the most and least popular pizza categories and sizes?
-- When are customers most active in placing orders?
-- Which products can be promoted or discontinued?
+- What is the total revenue generated and order count?
+- Which pizzas are most and least ordered?
+- What pizza sizes and categories dominate sales?
+- At what time of day are orders most frequent?
+- Which pizzas bring in the highest revenue?
 
-The analysis was performed on a multi-table relational database using advanced SQL queries and translated into visual storytelling via a **Power BI dashboard** and a **project presentation on Canva**.
+The analysis was conducted using **SQL** on a multi-table relational dataset and summarized into insights using structured queries.
 
 ## 🧾 Dataset Information
 
+- **Source**: Kaggle – Pizza Sales Dataset
+
 - **Tables Used**:
-  - `orders`: Order date and time
-  - `order_details`: Quantity and pizza reference per order
-  - `pizzas`: Pizza size, type, and price
-  - `pizza_types`: Name, category (e.g., Classic, Veggie), and ingredients
+  - `orders`: Order timestamps and IDs
+  - `order_details`: Items per order, including pizza and quantity
+  - `pizzas`: Details on pizza size, price, and type
+  - `pizza_types`: Pizza names, categories (e.g., Classic, Veggie), and ingredients
 
-- **Time Period**: January 2015 – December 2015  
+- **Time Period**: Full calendar year (simulated)  
 - **Total Orders**: 21,000+  
-- **Pizzas Sold**: ~49,500
-
+- **Total Pizzas Sold**: ~49,500  
 
 ## ⚙️ Tools & Technologies
 
 | Tool | Purpose |
 |------|---------|
-| 🐘 SQL Server Management System | SQL querying and analysis |
-| 📄 Canva | Project presentation |
-| 📁 GitHub | Version control and portfolio hosting |
+| 🐘 SQL Server | Data analysis using SQL queries |
+| 📊 Power BI | Visualizing sales KPIs |
+| 🌐 GitHub | Project versioning and portfolio display |
 
 ## 🧠 Key Insights Extracted
 
-- **Top Sellers**:  
-  - *The Thai Chicken* and *Barbecue Chicken* generated the most revenue.
-  - *The Classic Deluxe* topped quantity and order count.
+- **💰 Revenue Overview**:
+  - **Total Revenue**: Computed using `quantity × price` joins across tables
+  - **Top 3 Revenue-Generating Pizzas**: Based on total revenue per pizza type
 
-- **Low Performers**:  
-  - *The Brie Carre* and *The Spinach Supreme* consistently ranked lowest in all metrics.
+- **🔥 Popular Items**:
+  - *Top 5 Most Ordered Pizzas*: Based on total quantity ordered
+  - *Most Common Size*: Large pizzas dominated sales volume
 
-- **Time Trends**:
-  - **Peak Days**: Fridays & Saturdays
-  - **Peak Months**: January & July
-  - **Order Value**: Average Order = \$38.31  
-  - **Average Pizzas/Order**: ~2.32
+- **📦 Category Performance**:
+  - *Classic* and *Chicken* categories contributed highest quantities and revenue
+  - Category-wise revenue percentage breakdown was calculated
 
-- **Category Performance**:
-  - *Classic* pizzas lead in sales and popularity.
-  - *Large* size contributes ~46% of total revenue.
+- **🕒 Time-Based Insights**:
+  - **Peak Order Hours**: Evening hours (especially 7–8 PM)
+  - **Average Pizzas/Day**: ~135 pizzas/day on average
+
+- **📈 Trend Analysis**:
+  - Cumulative revenue over time shows growth patterns
+  - Top 3 pizzas by revenue per category help focus marketing and promotions
 
 ## 🧭 Research Methodology
 
-The project followed a structured data analysis process:
+The project followed a structured workflow:
 
-1. **Data Understanding** – Reviewed schemas, field types, and relationships.
-2. **Exploratory Queries** – Grouped, joined, and aggregated sales data.
-3. **Trend Analysis** – Daily, weekly, and monthly ordering behavior.
-4. **Segmentation** – Pizza size, category, and item-level performance.
-5. **Insight Derivation** – Visualized top/bottom sellers and time-based trends.
-
+1. **Schema Understanding** – Studied table relationships, column data types
+2. **Data Cleaning** – Used typecasting (e.g., `CAST(... AS VARCHAR)`) to ensure joins work
+3. **Exploratory SQL Queries** – JOINs, aggregations, ranking, and subqueries
+4. **Trend and KPI Analysis** – Revenue, volume, category-level breakdowns
+5. **Insight Generation** – Final insights were used to reflect real-world business use-cases
 
 ## 🎓 Project Presentation
 
-📽️ View the complete **Pizza Sales Presentation** (designed in Canva):  
-🔗 [Click here to view the Canva presentation](https://www.canva.com/design/DAGsr7iGDFk/C1NwLtf_OXqrA68Kcl640Q/view?utm_content=DAGsr7iGDFk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16a4153e5e)
+📽️ **Power BI Dashboard** & visual storytelling summarizing all findings.  
+🔗 [View Canva Report](https://www.canva.com/design/DAGsr7iGDFk/C1NwLtf_OXqrA68Kcl640Q/view?utm_content=DAGsr7iGDFk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h16a4153e5e)
